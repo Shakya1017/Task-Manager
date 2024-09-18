@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="mode-toggle">
+        <label for="mode-toggle">🌙</label>
+    </div>
+
+    <!-- Baby Bear Animation -->
+    <div class="bear-animation">
+        <img src="beer.png" alt="Baby Bear">
+    </div>
+
+    <!-- Task Added Modal -->
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Thank you for adding your task! 😊</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <!-- Task Input Form -->
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Enter Task Title" required>
+            <input type="date" id="task-date" required>
+            <input type="submit" value="Add Task">
+        </form>
+
+        <!-- Task List -->
+        <ul id="task-list">
+            <!-- Tasks will appear here -->
+        </ul>
+    </div>
+
+    <script src="frontend.js"></script>
+    <script src="theme-toggle.js"></script>
+</body>
+</html>
